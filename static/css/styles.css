@@ -1,0 +1,104 @@
+/* Fuentes y body */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+}
+
+/* Contenedor principal tipo tarjeta */
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    background-color: #1f2a38;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Navegación */
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1abc9c;
+    font-weight: 500;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #16a085;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 2em;
+    color: #ecf0f1;
+}
+
+/* Formularios modernos */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+    color: #ecf0f1;
+}
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #34495e;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+form input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 8px #1abc9c;
+    outline: none;
+}
+
+/* Botones estilo tech */
+form button, form input[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #1abc9c, #16a085);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+form button:hover, form input[type="submit"]:hover {
+    background: linear-gradient(45deg, #16a085, #1abc9c);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Mensajes flash estilo moderno */
+.flash {
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.flash.success { background-color: #27ae60; color: #fff; }
+.flash.danger { background-color: #c0392b; color: #fff; }
+.flash.info { background-color: #2980b9; color: #fff; }
+
+/* Pequeños detalles */
+a { color: #1abc9c; transition: 0.3s; }
+a:hover { color: #16a085; }
